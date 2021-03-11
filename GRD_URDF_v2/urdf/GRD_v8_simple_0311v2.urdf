@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="GRD_v8_simple_0311v2">
+  <link
+    name="base_footprint_link">
+    <inertial>
+      <origin
+        xyz="-6.56845352564806E-07 -5.67322442228012E-16 0.331904075260688"
+        rpy="0 0 0" />
+      <mass
+        value="0.789290645343358" />
+      <inertia
+        ixx="0.00130670897233411"
+        ixy="-3.37481664092773E-18"
+        ixz="-8.929681712688E-10"
+        iyy="0.00389981821392557"
+        iyz="8.82029181338017E-19"
+        izz="0.00386978211033499" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/base_footprint_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/base_footprint_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-5.37004284543315E-07 -8.88159587479759E-16 0.0331211817986434"
+        rpy="0 0 0" />
+      <mass
+        value="0.965433444631341" />
+      <inertia
+        ixx="0.00134888440724559"
+        ixy="-3.37169703179605E-18"
+        ixz="-8.92968171269934E-10"
+        iyy="0.00392787450302288"
+        iyz="8.85713255992045E-19"
+        izz="0.00391770229232179" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_link_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.3"
+      rpy="0 0 0" />
+    <parent
+      link="base_footprint_link" />
+    <child
+      link="base_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="FR1_link">
+    <inertial>
+      <origin
+        xyz="0.02647188689816 4.80020392801678E-05 -2.67494578370248E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0550356079426499" />
+      <inertia
+        ixx="1.02205475705113E-05"
+        ixy="9.23685580005685E-08"
+        ixz="-1.59953309685424E-08"
+        iyy="1.27188803100972E-05"
+        iyz="-3.99597507377748E-09"
+        izz="1.39400277304636E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FR1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FR1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FR1_joint"
+    type="revolute">
+    <origin
+      xyz="0.157899999999996 -0.0491000000000025 0.0384999999999952"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FR1_link" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FR2_link">
+    <inertial>
+      <origin
+        xyz="-0.0441265540366563 -0.0425793657426173 -0.0441355467320717"
+        rpy="0 0 0" />
+      <mass
+        value="0.265486137806875" />
+      <inertia
+        ixx="0.000570146540564845"
+        ixy="-1.5200271615186E-05"
+        ixz="-0.00045336130477458"
+        iyy="0.00110661889613504"
+        iyz="-1.5180057921017E-05"
+        izz="0.000570023268153554" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FR2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FR2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FR2_joint"
+    type="revolute">
+    <origin
+      xyz="0.0361 -0.023399999999997 0"
+      rpy="0 0 0" />
+    <parent
+      link="FR1_link" />
+    <child
+      link="FR2_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FR3_link">
+    <inertial>
+      <origin
+        xyz="0.07238067265259 -0.00740173077975712 -0.0723806191966414"
+        rpy="0 0 0" />
+      <mass
+        value="0.0885804690039686" />
+      <inertia
+        ixx="0.000114603910011105"
+        ixy="-1.15998021987912E-08"
+        ixz="0.00010330744347196"
+        iyy="0.000219372107259892"
+        iyz="1.16141800672016E-08"
+        izz="0.000114604460604962" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FR3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FR3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FR3_joint"
+    type="revolute">
+    <origin
+      xyz="-0.1484924240492 -0.0414000000000078 -0.148492424049142"
+      rpy="0 0 0" />
+    <parent
+      link="FR2_link" />
+    <child
+      link="FR3_link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FRC">
+    <inertial>
+      <origin
+        xyz="0.278954309743711 -1.19210197269126E-14 -0.295924043118938"
+        rpy="0 0 0" />
+      <mass
+        value="0.0325711990268232" />
+      <inertia
+        ixx="5.1813409379358E-06"
+        ixy="-7.30141771257225E-21"
+        ixz="-1.34387187064484E-07"
+        iyy="5.04672217647714E-06"
+        iyz="7.94370495754693E-21"
+        izz="5.18134093793581E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FRC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FRC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FRC_joint"
+    type="fixed">
+    <origin
+      xyz="-0.140007557361526 -0.00739999999999298 0.15697729073676"
+      rpy="0 0 0" />
+    <parent
+      link="FR3_link" />
+    <child
+      link="FRC" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="FL4_link">
+    <inertial>
+      <origin
+        xyz="0.0264718868981555 -4.80020392728472E-05 2.67494578488972E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0550356079426499" />
+      <inertia
+        ixx="1.02205475705113E-05"
+        ixy="-9.23685580005692E-08"
+        ixz="1.59953309685413E-08"
+        iyy="1.27188803100972E-05"
+        iyz="-3.99597507376527E-09"
+        izz="1.39400277304636E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FL4_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FL4_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FL4_joint"
+    type="revolute">
+    <origin
+      xyz="0.1579 0.0490999999999959 0.0387999999999899"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FL4_link" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FL5_link">
+    <inertial>
+      <origin
+        xyz="-0.0441355467320783 0.0428541477244782 -0.0477020668129667"
+        rpy="0 0 0" />
+      <mass
+        value="0.265486137806875" />
+      <inertia
+        ixx="0.000570023268153554"
+        ixy="1.51800579209823E-05"
+        ixz="-0.000453361304774579"
+        iyy="0.00110661889613504"
+        iyz="1.52002716151562E-05"
+        izz="0.00057014654056484" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FL5_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FL5_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FL5_joint"
+    type="revolute">
+    <origin
+      xyz="0.0360999999999953 0.0231252180181439 0.00357551277631834"
+      rpy="0 0 0" />
+    <parent
+      link="FL4_link" />
+    <child
+      link="FL5_link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FL6_link">
+    <inertial>
+      <origin
+        xyz="0.0723806726525865 0.00739826922024496 -0.0723806191966477"
+        rpy="0 0 0" />
+      <mass
+        value="0.0885804690039685" />
+      <inertia
+        ixx="0.000114603910011105"
+        ixy="-1.15998022050927E-08"
+        ixz="0.00010330744347196"
+        iyy="0.000219372107259892"
+        iyz="1.16141800735804E-08"
+        izz="0.000114604460604962" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FL6_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FL6_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FL6_joint"
+    type="revolute">
+    <origin
+      xyz="-0.148492424049141 0.0416747819818597 -0.152067936825508"
+      rpy="0 0 0" />
+    <parent
+      link="FL5_link" />
+    <child
+      link="FL6_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="FLC">
+    <inertial>
+      <origin
+        xyz="-0.00106080497939798 2.63677968348475E-16 0.00106080497939784"
+        rpy="0 0 0" />
+      <mass
+        value="0.0325711990268232" />
+      <inertia
+        ixx="5.1813409379358E-06"
+        ixy="1.85688711914407E-21"
+        ixz="-1.34387187064484E-07"
+        iyy="5.04672217647714E-06"
+        iyz="-1.32765753404042E-21"
+        izz="5.18134093793581E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FLC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/FLC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FCL_joint"
+    type="fixed">
+    <origin
+      xyz="0.140007557361579 0.00740000000000232 -0.140007557361582"
+      rpy="0 0 0" />
+    <parent
+      link="FL6_link" />
+    <child
+      link="FLC" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RR7_link">
+    <inertial>
+      <origin
+        xyz="-0.0234991038936824 0.000723715271802962 6.51904918935742E-12"
+        rpy="0 0 0" />
+      <mass
+        value="0.0644047483743213" />
+      <inertia
+        ixx="1.31324768595318E-05"
+        ixy="4.20280704942507E-08"
+        ixz="-3.5043241099196E-08"
+        iyy="1.51194834794009E-05"
+        iyz="3.84424368360101E-10"
+        izz="1.56355490955858E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RR7_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RR7_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR7_joint"
+    type="revolute">
+    <origin
+      xyz="-0.157900000000004 -0.0491000000000027 0.0384999999999962"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RR7_link" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RR8_link">
+    <inertial>
+      <origin
+        xyz="-0.0441265540366564 -0.0425793657426149 -0.0441355467320783"
+        rpy="0 0 0" />
+      <mass
+        value="0.265486137806876" />
+      <inertia
+        ixx="0.000570146540564849"
+        ixy="-1.520027161516E-05"
+        ixz="-0.000453361304774585"
+        iyy="0.00110661889613505"
+        iyz="-1.51800579209869E-05"
+        izz="0.000570023268153557" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RR8_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RR8_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR8_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0128499999999997 -0.0231000000000004 0"
+      rpy="0 0 0" />
+    <parent
+      link="RR7_link" />
+    <child
+      link="RR8_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RR9_link">
+    <inertial>
+      <origin
+        xyz="0.0723806726525871 -0.00740173077974589 -0.0723806191966511"
+        rpy="0 0 0" />
+      <mass
+        value="0.0885804690039686" />
+      <inertia
+        ixx="0.000114603910011105"
+        ixy="-1.15998022043671E-08"
+        ixz="0.000103307443471961"
+        iyy="0.000219372107259893"
+        iyz="1.16141800728648E-08"
+        izz="0.000114604460604962" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RR9_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RR9_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR9_joint"
+    type="revolute">
+    <origin
+      xyz="-0.148492424049197 -0.0414000000000061 -0.148492424049139"
+      rpy="0 0 0" />
+    <parent
+      link="RR8_link" />
+    <child
+      link="RR9_link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RRC">
+    <inertial>
+      <origin
+        xyz="-0.00106080497939751 1.42941214420489E-15 0.00106080497940167"
+        rpy="0 0 0" />
+      <mass
+        value="0.0325711990268232" />
+      <inertia
+        ixx="5.1813409379358E-06"
+        ixy="-1.50096558500611E-21"
+        ixz="-1.34387187064484E-07"
+        iyy="5.04672217647714E-06"
+        iyz="1.10559404285242E-21"
+        izz="5.18134093793581E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RRC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RRC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RRC_joint"
+    type="fixed">
+    <origin
+      xyz="0.140007557361579 -0.0073999999999915 -0.140007557361589"
+      rpy="0 0 0" />
+    <parent
+      link="RR9_link" />
+    <child
+      link="RRC" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RL10_link">
+    <inertial>
+      <origin
+        xyz="-0.0234991038936838 -0.000723715271803455 -6.50165338234032E-12"
+        rpy="0 0 0" />
+      <mass
+        value="0.0644047483743213" />
+      <inertia
+        ixx="1.31324768595318E-05"
+        ixy="-4.20280704942447E-08"
+        ixz="3.50432410991946E-08"
+        iyy="1.51194834794009E-05"
+        iyz="3.84424368364298E-10"
+        izz="1.56355490955858E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RL10_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RL10_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RL10_joint"
+    type="revolute">
+    <origin
+      xyz="-0.157900000000008 0.0491000000000026 0.0384999999999878"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RL10_link" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RL11_link">
+    <inertial>
+      <origin
+        xyz="-0.0441355467320797 0.0425793657426152 -0.0441265540366539"
+        rpy="0 0 0" />
+      <mass
+        value="0.265486137806874" />
+      <inertia
+        ixx="0.00057002326815355"
+        ixy="1.51800579209871E-05"
+        ixz="-0.000453361304774575"
+        iyy="0.00110661889613503"
+        iyz="1.52002716151607E-05"
+        izz="0.000570146540564835" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RL11_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RL11_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RL11_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0128500000000018 0.0231000000000003 0"
+      rpy="0 0 0" />
+    <parent
+      link="RL10_link" />
+    <child
+      link="RL11_link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RL12_link">
+    <inertial>
+      <origin
+        xyz="0.0723806726525869 0.00739826922024255 -0.0723806191966461"
+        rpy="0 0 0" />
+      <mass
+        value="0.0885804690039688" />
+      <inertia
+        ixx="0.000114603910011106"
+        ixy="-1.15998022046796E-08"
+        ixz="0.000103307443471961"
+        iyy="0.000219372107259893"
+        iyz="1.16141800731645E-08"
+        izz="0.000114604460604962" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RL12_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RL12_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RL12_joint"
+    type="revolute">
+    <origin
+      xyz="-0.148492424049144 0.0413999999999998 -0.148492424049197"
+      rpy="0 0 0" />
+    <parent
+      link="RL11_link" />
+    <child
+      link="RL12_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RLC">
+    <inertial>
+      <origin
+        xyz="-0.00106080497939781 -1.88737914186277E-15 0.00106080497939967"
+        rpy="0 0 0" />
+      <mass
+        value="0.0325711990268232" />
+      <inertia
+        ixx="5.1813409379358E-06"
+        ixy="2.3955249540361E-21"
+        ixz="-1.34387187064484E-07"
+        iyy="5.04672217647714E-06"
+        iyz="-1.11238608819408E-21"
+        izz="5.18134093793581E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RLC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GRD_v8_simple_0311v2/meshes/RLC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RLC_joint"
+    type="fixed">
+    <origin
+      xyz="0.140007557361579 0.00740000000000041 -0.140007557361583"
+      rpy="0 0 0" />
+    <parent
+      link="RL12_link" />
+    <child
+      link="RLC" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

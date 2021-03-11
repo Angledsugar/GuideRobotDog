@@ -19,6 +19,14 @@ from math import *
 import matplotlib.pyplot as plt
 global Leg_thetaes
 
+# sys.path.append(os.path.dirname(os.path.abspath(
+#                 os.path.dirname(os.path.abspath(
+#                 os.path.dirname(os.path.abspath(
+#                 os.path.dirname(os.path.abspath(
+#                 os.path.dirname(__file__))))))))))
+# from Hotdog import Hotdog
+# hd = Hotdog()
+
 # Control table address for Dynamixel XM-W350-R             # Control table address is different in Dynamixel model
 ADDR_XM_TORQUE_ENABLE      = 64
 ADDR_XM_Pgain      = 84
