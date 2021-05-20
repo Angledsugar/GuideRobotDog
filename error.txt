@@ -1,0 +1,88 @@
+pybullet build time: May 15 2021 14:40:58
+../../spotmicro/util/pybullet_data
+Succeeded to open the port!
+                           Succeeded to open the port!
+                                                      Succeeded to change the baudrate!
+                                                                                       Succeeded to change the baudrate!
+                                                                                                                        Dynamixel#1 has been successfully connected
+                                                                                                                                                                   Dynamixel#2 has been successfully connected
+  Dynamixel#3 has been successfully connected
+                                             Dynamixel#10 has been successfully connected
+                                                                                         Dynamixel#11 has been successfully connected
+                                                                                                                                     Dynamixel#12 has been successfully connected
+                                                                                                                                                                                 Dynamixel#4 has been successfully connected
+                Dynamixel#5 has been successfully connected
+                                                           Dynamixel#6 has been successfully connected
+                                                                                                      Dynamixel#7 has been successfully connected
+                                                                                                                                                 Dynamixel#8 has been successfully connected
+                                                                                                                                                                                            Dynamixel#9 has been successfully connected
+                           STARTING SPOT SAC
+                                            argv[0]=
+                                                    startThreads creating 1 threads.
+                                                                                    starting thread 0
+                                                                                                     started thread 0 
+                                                                                                                      argc=3
+                                                                                                                            argv[0] = --unused
+                                                                                                                                              argv[1] = 
+                                                                                                                                                        argv[2] = --start_demo_name=Physics Server
+                                                                                                                                                                                                  ExampleBrowserThreadFunc started
+                      X11 functions dynamically loaded using dlopen/dlsym OK!
+                                                                             X11 functions dynamically loaded using dlopen/dlsym OK!
+                                                                                                                                    Creating context
+                                                                                                                                                    Created GL 3.3 context
+                                                                                                                                                                          Direct GLX rendering context obtained
+   Making context current
+                         GL_VENDOR=NVIDIA Corporation
+                                                     GL_RENDERER=NVIDIA Tegra X1 (nvgpu)/integrated
+                                                                                                   GL_VERSION=3.3.0 NVIDIA 32.5.1
+                                                                                                                                 GL_SHADING_LANGUAGE_VERSION=3.30 NVIDIA via Cg compiler
+                                                                                                                                                                                        pthread_getconcurrency()=0
+      Version = 3.3.0 NVIDIA 32.5.1
+                                   Vendor = NVIDIA Corporation
+                                                              Renderer = NVIDIA Tegra X1 (nvgpu)/integrated
+                                                                                                           b3Printf: Selected demo: Physics Server
+                                                                                                                                                  startThreads creating 1 threads.
+                                                                                                                                                                                  starting thread 0
+                                                                                                                                                                                                   started thread 0 
+        MotionThreadFunc thread started
+                                       [8, 4, 16, 12]
+                                                     Action SPACE: Box(14,)
+                                                                           STATE DIM: 16
+                                                                                        ACTION DIM: 14
+                                                                                                      RECORDED MAX ACTION: 1.0
+                                                                                                                              ven = NVIDIA Corporation
+                                                                                                                                                      ven = NVIDIA Corporation
+                                                                                                                                                                              Traceback (most recent call last):
+      File "spot_sac_eval.py", line 200, in <module>
+                                                        main()
+                                                                File "spot_sac_eval.py", line 77, in main
+                                                                                                             replay_buffer=replay_buffer)
+                                                                                                                                           File "/home/grd/grd_ws/Spot_mini_mini_Hodog_ccy/spot_bullet/src/sac_lib/sac.py", line 26, in __init__
+                                        self.policy_net = policy.to(device)
+                                                                             File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 673, in to
+                                                                                                                                                                          return self._apply(convert)
+                                                                                                                                                                                                       File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 387, in _apply
+                                                                                            module._apply(fn)
+                                                                                                               File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 409, in _apply
+                                                                                                                                                                                                               param_applied = fn(param)
+                              File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 671, in convert
+                                                                                                                                return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+                 RuntimeError: CUDA error: invalid device ordinal
+                                                                 numActiveThreads = 0
+                                                                                     stopping threads
+                                                                                                     Thread with taskId 0 exiting
+                                                                                                                                 Thread TERMINATED
+                                                                                                                                                  destroy semaphore
+                                                                                                                                                                   semaphore destroyed
+                                                                                                                                                                                      destroy main semaphore
+                                                                                                                                                                                                           main semaphore destroyed
+                       finished
+                               numActiveThreads = 0
+                                                   btShutDownExampleBrowser stopping threads
+                                                                                            Thread with taskId 0 exiting
+                                                                                                                        Thread TERMINATED
+                                                                                                                                         destroy semaphore
+                                                                                                                                                          semaphore destroyed
+                                                                                                                                                                             destroy main semaphore
+                                                                                                                                                                                                   main semaphore destroyed
+
